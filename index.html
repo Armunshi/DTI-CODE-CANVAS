@@ -13,16 +13,34 @@
             box-sizing: border-box;
         }
 
-        .navbar{
+        .navbar {
             background-color: rgb(61, 2, 109);
             color: white;
             font-family: cursive;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid rgb(255, 255, 255);
-            padding: 10px;
-        }
+            display: flex; /* Remove flex-direction: column */
+            align-items:baseline; /* Remove align-items: flex-start */
+            justify-content: space-between; /* Maintain horizontal spacing */
+            padding: 10px 20px; /* Adjust padding as needed */
+          }
+          
+          .navbar h1 {
+            margin-left: 0; /* Remove margin-left */
+          }
+          
+          .navbar ul {
+            display: flex; /* Change to flexbox */
+            list-style: none; /* Remove default bullet points */
+            margin: 0; /* Remove margin-top */
+            padding: 0; /* Remove padding */
+          }
+          
+          .navbar li {
+            margin-right: 10px; /* Maintain spacing between list items */
+          }
+          
+          .navbar button {
+            padding: 10px 20px; /* Adjust padding as needed */
+          }
 
         body
         {
